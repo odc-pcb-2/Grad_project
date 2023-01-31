@@ -34,6 +34,9 @@ int main(void)
 		u8 wrong_pass_count = smart_lock();					// if pass wrong and exceed tries safe go on lock mode
 		if (wrong_pass_count == 0 || wrong_pass_count == 3)	// if wrong_pass_count equal to (0 when pass correct) or (3 when user exceed number of tries)
 		{
+			DIO_vidWritePin(GPIOD,PIN7,HIGH);
+			_delay_ms(50000);
+			DIO_vidWritePin(GPIOD,PIN7,LOW);
 			break;											// stop the loop
 		}
 	}
