@@ -78,7 +78,7 @@ u16 ADC_u16Read(void)
     while(GET_BIT(ADCSRA, ADIF) == 0);
     SET_BIT(ADCSRA, ADIF);
     u16ReturnedValue  = (u16)ADCL;
-    u16ReturnedValue |= (u16)(ADCL<<8);
+    u16ReturnedValue |= (u16)(ADCH<<8);
     return u16ReturnedValue;
 }
 
