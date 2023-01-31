@@ -185,6 +185,9 @@ u8 smart_lock()
 	{
 		LCD_vidClearScreen();				// clear LCD screen
 		LCD_vidDisplayString("Locked Mode!!");	// display message on LCD
+		DIO_vidWritePin(GPIOD,PIN7,HIGH);
+		_delay_ms(15000);
+		DIO_vidWritePin(GPIOD,PIN7,LOW);
 	}
 	return wrong_pass_count;				// return value of wrong_pass_count variable
 }
