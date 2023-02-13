@@ -16,7 +16,7 @@ typedef enum
     RISING_EDGE
 }_enuFIRING_SOURCE;
 
-void EXTI_vidInit(_SOURCE_OF_INTERUPT enuInterruptNum, _enuFIRING_SOURCE enuFiringSource);
+void EXTI_vidInit(_enuSOURCE_OF_INTERUPT enuInterruptNum, _enuFIRING_SOURCE enuFiringSource);
 
 void EXTI_vidSetCB(_enuSOURCE_OF_INTERUPT enuInterruptNum, void (*PtrFunCB)(void));       //CB--> callBack
 
