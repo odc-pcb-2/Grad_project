@@ -18,7 +18,7 @@ C Programming Language
 ## Project tools 
 
 1. Proteus 8
-1. Microchip studio
+2. Microchip studio
 
 ## Summary
 
