@@ -25,12 +25,12 @@ Microchip studio
 Smart home project is an Embedded system project where devices can be automaticlly controlled remotely with bluetooth using mobil or laptop,
 users can control the Room Lighting, Air condition, and the door opening.
 
-## Project Features
+## Project Features:
 
->1.Remotely controlled
->2.Can operate in two modes (Admin mode and user mode)
->3.Admin Mode can access all devices and add users to start control the system
->4.User mode can access all devices except the door opening
+1.Remotely controlled
+2.Can operate in two modes (Admin mode and user mode)
+3.Admin Mode can access all devices and add users to start control the system
+4.User mode can access all devices except the door opening
 
 ## Requirements to Run the project
 
