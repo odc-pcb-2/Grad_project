@@ -17,8 +17,8 @@ C Programming Language
 
 ## Project tools 
 
-Proteus 8
-Microchip studio
+1. Proteus 8
+1. Microchip studio
 
 ## Summary
 
@@ -27,10 +27,10 @@ users can control the Room Lighting, Air condition, and the door opening.
 
 ## Project Features:
 
-1.Remotely controlled
-2.Can operate in two modes (Admin mode and user mode)
-3.Admin Mode can access all devices and add users to start control the system
-4.User mode can access all devices except the door opening
+1. Remotely controlled
+2. Can operate in two modes (Admin mode and user mode)
+3. Admin Mode can access all devices and add users to start control the system
+4. User mode can access all devices except the door opening
 
 ## Requirements to Run the project
 
