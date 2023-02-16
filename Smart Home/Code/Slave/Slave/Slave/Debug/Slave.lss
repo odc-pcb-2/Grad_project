@@ -1,0 +1,1359 @@
+
+Slave.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000740  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000000  00800060  00800060  000007b4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000001  00800060  00800060  000007b4  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  000007b4  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000007e4  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000140  00000000  00000000  00000820  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000014f9  00000000  00000000  00000960  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000891  00000000  00000000  00001e59  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a16  00000000  00000000  000026ea  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  0000027c  00000000  00000000  00003100  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000663  00000000  00000000  0000337c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    000009d6  00000000  00000000  000039df  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000100  00000000  00000000  000043b5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 89 00 	jmp	0x112	; 0x112 <__ctors_end>
+   4:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+   8:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+   c:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  10:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  14:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  18:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  1c:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  20:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  24:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  28:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  2c:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  30:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  34:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  38:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  3c:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  40:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  44:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  48:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  4c:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  50:	0c 94 a6 00 	jmp	0x14c	; 0x14c <__bad_interrupt>
+  54:	01 02       	muls	r16, r17
+  56:	e3 01       	movw	r28, r6
+  58:	15 02       	muls	r17, r21
+  5a:	1f 02       	muls	r17, r31
+  5c:	0b 02       	muls	r16, r27
+  5e:	29 02       	muls	r18, r25
+  60:	e3 01       	movw	r28, r6
+  62:	e3 01       	movw	r28, r6
+  64:	e3 01       	movw	r28, r6
+  66:	e3 01       	movw	r28, r6
+  68:	e3 01       	movw	r28, r6
+  6a:	e3 01       	movw	r28, r6
+  6c:	e3 01       	movw	r28, r6
+  6e:	e3 01       	movw	r28, r6
+  70:	e3 01       	movw	r28, r6
+  72:	e3 01       	movw	r28, r6
+  74:	e3 01       	movw	r28, r6
+  76:	e3 01       	movw	r28, r6
+  78:	e3 01       	movw	r28, r6
+  7a:	e3 01       	movw	r28, r6
+  7c:	e3 01       	movw	r28, r6
+  7e:	e3 01       	movw	r28, r6
+  80:	e3 01       	movw	r28, r6
+  82:	e3 01       	movw	r28, r6
+  84:	f7 01       	movw	r30, r14
+  86:	e3 01       	movw	r28, r6
+  88:	e3 01       	movw	r28, r6
+  8a:	e3 01       	movw	r28, r6
+  8c:	e3 01       	movw	r28, r6
+  8e:	e3 01       	movw	r28, r6
+  90:	e3 01       	movw	r28, r6
+  92:	e3 01       	movw	r28, r6
+  94:	06 02       	muls	r16, r22
+  96:	e3 01       	movw	r28, r6
+  98:	1a 02       	muls	r17, r26
+  9a:	24 02       	muls	r18, r20
+  9c:	10 02       	muls	r17, r16
+  9e:	2f 02       	muls	r18, r31
+  a0:	e3 01       	movw	r28, r6
+  a2:	e3 01       	movw	r28, r6
+  a4:	e3 01       	movw	r28, r6
+  a6:	e3 01       	movw	r28, r6
+  a8:	e3 01       	movw	r28, r6
+  aa:	e3 01       	movw	r28, r6
+  ac:	e3 01       	movw	r28, r6
+  ae:	e3 01       	movw	r28, r6
+  b0:	e3 01       	movw	r28, r6
+  b2:	e3 01       	movw	r28, r6
+  b4:	e3 01       	movw	r28, r6
+  b6:	e3 01       	movw	r28, r6
+  b8:	e3 01       	movw	r28, r6
+  ba:	e3 01       	movw	r28, r6
+  bc:	e3 01       	movw	r28, r6
+  be:	e3 01       	movw	r28, r6
+  c0:	e3 01       	movw	r28, r6
+  c2:	e3 01       	movw	r28, r6
+  c4:	fc 01       	movw	r30, r24
+  c6:	74 02       	muls	r23, r20
+  c8:	89 02       	muls	r24, r25
+  ca:	9e 02       	muls	r25, r30
+  cc:	b3 02       	muls	r27, r19
+  ce:	c8 02       	muls	r28, r24
+  d0:	dd 02       	muls	r29, r29
+  d2:	5b 02       	muls	r21, r27
+  d4:	5b 02       	muls	r21, r27
+  d6:	5b 02       	muls	r21, r27
+  d8:	5b 02       	muls	r21, r27
+  da:	5b 02       	muls	r21, r27
+  dc:	5b 02       	muls	r21, r27
+  de:	5b 02       	muls	r21, r27
+  e0:	5b 02       	muls	r21, r27
+  e2:	5b 02       	muls	r21, r27
+  e4:	5b 02       	muls	r21, r27
+  e6:	f2 02       	muls	r31, r18
+  e8:	f7 02       	muls	r31, r23
+  ea:	fc 02       	muls	r31, r28
+  ec:	01 03       	mulsu	r16, r17
+  ee:	06 03       	mulsu	r16, r22
+  f0:	0b 03       	fmul	r16, r19
+  f2:	5b 02       	muls	r21, r27
+  f4:	5b 02       	muls	r21, r27
+  f6:	5b 02       	muls	r21, r27
+  f8:	5b 02       	muls	r21, r27
+  fa:	5b 02       	muls	r21, r27
+  fc:	5b 02       	muls	r21, r27
+  fe:	5b 02       	muls	r21, r27
+ 100:	5b 02       	muls	r21, r27
+ 102:	5b 02       	muls	r21, r27
+ 104:	5b 02       	muls	r21, r27
+ 106:	11 03       	mulsu	r17, r17
+ 108:	16 03       	mulsu	r17, r22
+ 10a:	1b 03       	fmul	r17, r19
+ 10c:	20 03       	mulsu	r18, r16
+ 10e:	25 03       	mulsu	r18, r21
+ 110:	2a 03       	fmul	r18, r18
+
+00000112 <__ctors_end>:
+ 112:	11 24       	eor	r1, r1
+ 114:	1f be       	out	0x3f, r1	; 63
+ 116:	cf e5       	ldi	r28, 0x5F	; 95
+ 118:	d8 e0       	ldi	r29, 0x08	; 8
+ 11a:	de bf       	out	0x3e, r29	; 62
+ 11c:	cd bf       	out	0x3d, r28	; 61
+
+0000011e <__do_copy_data>:
+ 11e:	10 e0       	ldi	r17, 0x00	; 0
+ 120:	a0 e6       	ldi	r26, 0x60	; 96
+ 122:	b0 e0       	ldi	r27, 0x00	; 0
+ 124:	e0 e4       	ldi	r30, 0x40	; 64
+ 126:	f7 e0       	ldi	r31, 0x07	; 7
+ 128:	02 c0       	rjmp	.+4      	; 0x12e <__do_copy_data+0x10>
+ 12a:	05 90       	lpm	r0, Z+
+ 12c:	0d 92       	st	X+, r0
+ 12e:	a0 36       	cpi	r26, 0x60	; 96
+ 130:	b1 07       	cpc	r27, r17
+ 132:	d9 f7       	brne	.-10     	; 0x12a <__do_copy_data+0xc>
+
+00000134 <__do_clear_bss>:
+ 134:	20 e0       	ldi	r18, 0x00	; 0
+ 136:	a0 e6       	ldi	r26, 0x60	; 96
+ 138:	b0 e0       	ldi	r27, 0x00	; 0
+ 13a:	01 c0       	rjmp	.+2      	; 0x13e <.do_clear_bss_start>
+
+0000013c <.do_clear_bss_loop>:
+ 13c:	1d 92       	st	X+, r1
+
+0000013e <.do_clear_bss_start>:
+ 13e:	a1 36       	cpi	r26, 0x61	; 97
+ 140:	b2 07       	cpc	r27, r18
+ 142:	e1 f7       	brne	.-8      	; 0x13c <.do_clear_bss_loop>
+ 144:	0e 94 35 02 	call	0x46a	; 0x46a <main>
+ 148:	0c 94 9e 03 	jmp	0x73c	; 0x73c <_exit>
+
+0000014c <__bad_interrupt>:
+ 14c:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000150 <DIO_vidSetPinMode>:
+#include "DIO_config.h"
+
+
+void DIO_vidSetPinMode(_enuGPIOx enuPortNum, _enuPINx enuPinNum, _enuIOx enuPinDirection)
+{
+    switch (enuPortNum)
+ 150:	81 30       	cpi	r24, 0x01	; 1
+ 152:	01 f1       	breq	.+64     	; 0x194 <DIO_vidSetPinMode+0x44>
+ 154:	30 f0       	brcs	.+12     	; 0x162 <DIO_vidSetPinMode+0x12>
+ 156:	82 30       	cpi	r24, 0x02	; 2
+ 158:	b1 f1       	breq	.+108    	; 0x1c6 <DIO_vidSetPinMode+0x76>
+ 15a:	83 30       	cpi	r24, 0x03	; 3
+ 15c:	09 f4       	brne	.+2      	; 0x160 <DIO_vidSetPinMode+0x10>
+ 15e:	4c c0       	rjmp	.+152    	; 0x1f8 <DIO_vidSetPinMode+0xa8>
+ 160:	08 95       	ret
+    {
+        case GPIOA:
+        if(OUTPUT == enuPinDirection)
+ 162:	41 30       	cpi	r20, 0x01	; 1
+ 164:	59 f4       	brne	.+22     	; 0x17c <DIO_vidSetPinMode+0x2c>
+        {   
+            SET_BIT(DDRA,enuPinNum);
+ 166:	2a b3       	in	r18, 0x1a	; 26
+ 168:	81 e0       	ldi	r24, 0x01	; 1
+ 16a:	90 e0       	ldi	r25, 0x00	; 0
+ 16c:	02 c0       	rjmp	.+4      	; 0x172 <DIO_vidSetPinMode+0x22>
+ 16e:	88 0f       	add	r24, r24
+ 170:	99 1f       	adc	r25, r25
+ 172:	6a 95       	dec	r22
+ 174:	e2 f7       	brpl	.-8      	; 0x16e <DIO_vidSetPinMode+0x1e>
+ 176:	82 2b       	or	r24, r18
+ 178:	8a bb       	out	0x1a, r24	; 26
+ 17a:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(DDRA,enuPinNum);
+ 17c:	2a b3       	in	r18, 0x1a	; 26
+ 17e:	81 e0       	ldi	r24, 0x01	; 1
+ 180:	90 e0       	ldi	r25, 0x00	; 0
+ 182:	02 c0       	rjmp	.+4      	; 0x188 <DIO_vidSetPinMode+0x38>
+ 184:	88 0f       	add	r24, r24
+ 186:	99 1f       	adc	r25, r25
+ 188:	6a 95       	dec	r22
+ 18a:	e2 f7       	brpl	.-8      	; 0x184 <DIO_vidSetPinMode+0x34>
+ 18c:	80 95       	com	r24
+ 18e:	82 23       	and	r24, r18
+ 190:	8a bb       	out	0x1a, r24	; 26
+ 192:	08 95       	ret
+        }
+        break;
+        case GPIOB:
+        if(OUTPUT == enuPinDirection)
+ 194:	41 30       	cpi	r20, 0x01	; 1
+ 196:	59 f4       	brne	.+22     	; 0x1ae <DIO_vidSetPinMode+0x5e>
+        {   
+            SET_BIT(DDRB,enuPinNum);
+ 198:	27 b3       	in	r18, 0x17	; 23
+ 19a:	81 e0       	ldi	r24, 0x01	; 1
+ 19c:	90 e0       	ldi	r25, 0x00	; 0
+ 19e:	02 c0       	rjmp	.+4      	; 0x1a4 <DIO_vidSetPinMode+0x54>
+ 1a0:	88 0f       	add	r24, r24
+ 1a2:	99 1f       	adc	r25, r25
+ 1a4:	6a 95       	dec	r22
+ 1a6:	e2 f7       	brpl	.-8      	; 0x1a0 <DIO_vidSetPinMode+0x50>
+ 1a8:	82 2b       	or	r24, r18
+ 1aa:	87 bb       	out	0x17, r24	; 23
+ 1ac:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(DDRB,enuPinNum);
+ 1ae:	27 b3       	in	r18, 0x17	; 23
+ 1b0:	81 e0       	ldi	r24, 0x01	; 1
+ 1b2:	90 e0       	ldi	r25, 0x00	; 0
+ 1b4:	02 c0       	rjmp	.+4      	; 0x1ba <DIO_vidSetPinMode+0x6a>
+ 1b6:	88 0f       	add	r24, r24
+ 1b8:	99 1f       	adc	r25, r25
+ 1ba:	6a 95       	dec	r22
+ 1bc:	e2 f7       	brpl	.-8      	; 0x1b6 <DIO_vidSetPinMode+0x66>
+ 1be:	80 95       	com	r24
+ 1c0:	82 23       	and	r24, r18
+ 1c2:	87 bb       	out	0x17, r24	; 23
+ 1c4:	08 95       	ret
+        }
+        break;
+        case GPIOC:
+        if(OUTPUT == enuPinDirection)
+ 1c6:	41 30       	cpi	r20, 0x01	; 1
+ 1c8:	59 f4       	brne	.+22     	; 0x1e0 <DIO_vidSetPinMode+0x90>
+        {   
+            SET_BIT(DDRC,enuPinNum);
+ 1ca:	24 b3       	in	r18, 0x14	; 20
+ 1cc:	81 e0       	ldi	r24, 0x01	; 1
+ 1ce:	90 e0       	ldi	r25, 0x00	; 0
+ 1d0:	02 c0       	rjmp	.+4      	; 0x1d6 <DIO_vidSetPinMode+0x86>
+ 1d2:	88 0f       	add	r24, r24
+ 1d4:	99 1f       	adc	r25, r25
+ 1d6:	6a 95       	dec	r22
+ 1d8:	e2 f7       	brpl	.-8      	; 0x1d2 <DIO_vidSetPinMode+0x82>
+ 1da:	82 2b       	or	r24, r18
+ 1dc:	84 bb       	out	0x14, r24	; 20
+ 1de:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(DDRC,enuPinNum);
+ 1e0:	24 b3       	in	r18, 0x14	; 20
+ 1e2:	81 e0       	ldi	r24, 0x01	; 1
+ 1e4:	90 e0       	ldi	r25, 0x00	; 0
+ 1e6:	02 c0       	rjmp	.+4      	; 0x1ec <DIO_vidSetPinMode+0x9c>
+ 1e8:	88 0f       	add	r24, r24
+ 1ea:	99 1f       	adc	r25, r25
+ 1ec:	6a 95       	dec	r22
+ 1ee:	e2 f7       	brpl	.-8      	; 0x1e8 <DIO_vidSetPinMode+0x98>
+ 1f0:	80 95       	com	r24
+ 1f2:	82 23       	and	r24, r18
+ 1f4:	84 bb       	out	0x14, r24	; 20
+ 1f6:	08 95       	ret
+        }
+        break;
+        case GPIOD:
+        if(OUTPUT == enuPinDirection)
+ 1f8:	41 30       	cpi	r20, 0x01	; 1
+ 1fa:	59 f4       	brne	.+22     	; 0x212 <DIO_vidSetPinMode+0xc2>
+        {   
+            SET_BIT(DDRD,enuPinNum);
+ 1fc:	21 b3       	in	r18, 0x11	; 17
+ 1fe:	81 e0       	ldi	r24, 0x01	; 1
+ 200:	90 e0       	ldi	r25, 0x00	; 0
+ 202:	02 c0       	rjmp	.+4      	; 0x208 <DIO_vidSetPinMode+0xb8>
+ 204:	88 0f       	add	r24, r24
+ 206:	99 1f       	adc	r25, r25
+ 208:	6a 95       	dec	r22
+ 20a:	e2 f7       	brpl	.-8      	; 0x204 <DIO_vidSetPinMode+0xb4>
+ 20c:	82 2b       	or	r24, r18
+ 20e:	81 bb       	out	0x11, r24	; 17
+ 210:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(DDRD,enuPinNum);
+ 212:	21 b3       	in	r18, 0x11	; 17
+ 214:	81 e0       	ldi	r24, 0x01	; 1
+ 216:	90 e0       	ldi	r25, 0x00	; 0
+ 218:	02 c0       	rjmp	.+4      	; 0x21e <DIO_vidSetPinMode+0xce>
+ 21a:	88 0f       	add	r24, r24
+ 21c:	99 1f       	adc	r25, r25
+ 21e:	6a 95       	dec	r22
+ 220:	e2 f7       	brpl	.-8      	; 0x21a <DIO_vidSetPinMode+0xca>
+ 222:	80 95       	com	r24
+ 224:	82 23       	and	r24, r18
+ 226:	81 bb       	out	0x11, r24	; 17
+ 228:	08 95       	ret
+
+0000022a <DIO_vidWritePin>:
+    }
+}
+
+void DIO_vidWritePin(_enuGPIOx enuPortNum, _enuPINx enuPinNum, _enuPINVALUE enuPinValue)
+{
+    switch(enuPortNum)
+ 22a:	81 30       	cpi	r24, 0x01	; 1
+ 22c:	01 f1       	breq	.+64     	; 0x26e <DIO_vidWritePin+0x44>
+ 22e:	30 f0       	brcs	.+12     	; 0x23c <DIO_vidWritePin+0x12>
+ 230:	82 30       	cpi	r24, 0x02	; 2
+ 232:	b1 f1       	breq	.+108    	; 0x2a0 <DIO_vidWritePin+0x76>
+ 234:	83 30       	cpi	r24, 0x03	; 3
+ 236:	09 f4       	brne	.+2      	; 0x23a <DIO_vidWritePin+0x10>
+ 238:	4c c0       	rjmp	.+152    	; 0x2d2 <DIO_vidWritePin+0xa8>
+ 23a:	08 95       	ret
+    {
+        case GPIOA:
+        if(HIGH == enuPinValue)
+ 23c:	41 30       	cpi	r20, 0x01	; 1
+ 23e:	59 f4       	brne	.+22     	; 0x256 <DIO_vidWritePin+0x2c>
+        {
+            SET_BIT(PORTA,enuPinNum);
+ 240:	2b b3       	in	r18, 0x1b	; 27
+ 242:	81 e0       	ldi	r24, 0x01	; 1
+ 244:	90 e0       	ldi	r25, 0x00	; 0
+ 246:	02 c0       	rjmp	.+4      	; 0x24c <DIO_vidWritePin+0x22>
+ 248:	88 0f       	add	r24, r24
+ 24a:	99 1f       	adc	r25, r25
+ 24c:	6a 95       	dec	r22
+ 24e:	e2 f7       	brpl	.-8      	; 0x248 <DIO_vidWritePin+0x1e>
+ 250:	82 2b       	or	r24, r18
+ 252:	8b bb       	out	0x1b, r24	; 27
+ 254:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(PORTA,enuPinNum);
+ 256:	2b b3       	in	r18, 0x1b	; 27
+ 258:	81 e0       	ldi	r24, 0x01	; 1
+ 25a:	90 e0       	ldi	r25, 0x00	; 0
+ 25c:	02 c0       	rjmp	.+4      	; 0x262 <DIO_vidWritePin+0x38>
+ 25e:	88 0f       	add	r24, r24
+ 260:	99 1f       	adc	r25, r25
+ 262:	6a 95       	dec	r22
+ 264:	e2 f7       	brpl	.-8      	; 0x25e <DIO_vidWritePin+0x34>
+ 266:	80 95       	com	r24
+ 268:	82 23       	and	r24, r18
+ 26a:	8b bb       	out	0x1b, r24	; 27
+ 26c:	08 95       	ret
+        }
+        break;
+        case GPIOB:
+        if(HIGH == enuPinValue)
+ 26e:	41 30       	cpi	r20, 0x01	; 1
+ 270:	59 f4       	brne	.+22     	; 0x288 <DIO_vidWritePin+0x5e>
+        {
+            SET_BIT(PORTB,enuPinNum);
+ 272:	28 b3       	in	r18, 0x18	; 24
+ 274:	81 e0       	ldi	r24, 0x01	; 1
+ 276:	90 e0       	ldi	r25, 0x00	; 0
+ 278:	02 c0       	rjmp	.+4      	; 0x27e <DIO_vidWritePin+0x54>
+ 27a:	88 0f       	add	r24, r24
+ 27c:	99 1f       	adc	r25, r25
+ 27e:	6a 95       	dec	r22
+ 280:	e2 f7       	brpl	.-8      	; 0x27a <DIO_vidWritePin+0x50>
+ 282:	82 2b       	or	r24, r18
+ 284:	88 bb       	out	0x18, r24	; 24
+ 286:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(PORTB,enuPinNum);
+ 288:	28 b3       	in	r18, 0x18	; 24
+ 28a:	81 e0       	ldi	r24, 0x01	; 1
+ 28c:	90 e0       	ldi	r25, 0x00	; 0
+ 28e:	02 c0       	rjmp	.+4      	; 0x294 <DIO_vidWritePin+0x6a>
+ 290:	88 0f       	add	r24, r24
+ 292:	99 1f       	adc	r25, r25
+ 294:	6a 95       	dec	r22
+ 296:	e2 f7       	brpl	.-8      	; 0x290 <DIO_vidWritePin+0x66>
+ 298:	80 95       	com	r24
+ 29a:	82 23       	and	r24, r18
+ 29c:	88 bb       	out	0x18, r24	; 24
+ 29e:	08 95       	ret
+        }
+        break;
+        case GPIOC:
+        if(HIGH == enuPinValue)
+ 2a0:	41 30       	cpi	r20, 0x01	; 1
+ 2a2:	59 f4       	brne	.+22     	; 0x2ba <DIO_vidWritePin+0x90>
+        {
+            SET_BIT(PORTC,enuPinNum);
+ 2a4:	25 b3       	in	r18, 0x15	; 21
+ 2a6:	81 e0       	ldi	r24, 0x01	; 1
+ 2a8:	90 e0       	ldi	r25, 0x00	; 0
+ 2aa:	02 c0       	rjmp	.+4      	; 0x2b0 <DIO_vidWritePin+0x86>
+ 2ac:	88 0f       	add	r24, r24
+ 2ae:	99 1f       	adc	r25, r25
+ 2b0:	6a 95       	dec	r22
+ 2b2:	e2 f7       	brpl	.-8      	; 0x2ac <DIO_vidWritePin+0x82>
+ 2b4:	82 2b       	or	r24, r18
+ 2b6:	85 bb       	out	0x15, r24	; 21
+ 2b8:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(PORTC,enuPinNum);
+ 2ba:	25 b3       	in	r18, 0x15	; 21
+ 2bc:	81 e0       	ldi	r24, 0x01	; 1
+ 2be:	90 e0       	ldi	r25, 0x00	; 0
+ 2c0:	02 c0       	rjmp	.+4      	; 0x2c6 <DIO_vidWritePin+0x9c>
+ 2c2:	88 0f       	add	r24, r24
+ 2c4:	99 1f       	adc	r25, r25
+ 2c6:	6a 95       	dec	r22
+ 2c8:	e2 f7       	brpl	.-8      	; 0x2c2 <DIO_vidWritePin+0x98>
+ 2ca:	80 95       	com	r24
+ 2cc:	82 23       	and	r24, r18
+ 2ce:	85 bb       	out	0x15, r24	; 21
+ 2d0:	08 95       	ret
+        }
+        break;
+        case GPIOD:
+        if(HIGH == enuPinValue)
+ 2d2:	41 30       	cpi	r20, 0x01	; 1
+ 2d4:	59 f4       	brne	.+22     	; 0x2ec <DIO_vidWritePin+0xc2>
+        {
+            SET_BIT(PORTD,enuPinNum);
+ 2d6:	22 b3       	in	r18, 0x12	; 18
+ 2d8:	81 e0       	ldi	r24, 0x01	; 1
+ 2da:	90 e0       	ldi	r25, 0x00	; 0
+ 2dc:	02 c0       	rjmp	.+4      	; 0x2e2 <DIO_vidWritePin+0xb8>
+ 2de:	88 0f       	add	r24, r24
+ 2e0:	99 1f       	adc	r25, r25
+ 2e2:	6a 95       	dec	r22
+ 2e4:	e2 f7       	brpl	.-8      	; 0x2de <DIO_vidWritePin+0xb4>
+ 2e6:	82 2b       	or	r24, r18
+ 2e8:	82 bb       	out	0x12, r24	; 18
+ 2ea:	08 95       	ret
+        }
+        else
+        {
+            CLR_BIT(PORTD,enuPinNum);
+ 2ec:	22 b3       	in	r18, 0x12	; 18
+ 2ee:	81 e0       	ldi	r24, 0x01	; 1
+ 2f0:	90 e0       	ldi	r25, 0x00	; 0
+ 2f2:	02 c0       	rjmp	.+4      	; 0x2f8 <DIO_vidWritePin+0xce>
+ 2f4:	88 0f       	add	r24, r24
+ 2f6:	99 1f       	adc	r25, r25
+ 2f8:	6a 95       	dec	r22
+ 2fa:	e2 f7       	brpl	.-8      	; 0x2f4 <DIO_vidWritePin+0xca>
+ 2fc:	80 95       	com	r24
+ 2fe:	82 23       	and	r24, r18
+ 300:	82 bb       	out	0x12, r24	; 18
+ 302:	08 95       	ret
+
+00000304 <DIO_enuReadPin>:
+}
+
+_enuPINVALUE DIO_enuReadPin(_enuGPIOx enuPortNum, _enuPINx enuPinNum)
+{
+    _enuPINVALUE enuPinReturnedValue;
+    switch(enuPortNum)
+ 304:	81 30       	cpi	r24, 0x01	; 1
+ 306:	c9 f0       	breq	.+50     	; 0x33a <DIO_enuReadPin+0x36>
+ 308:	28 f0       	brcs	.+10     	; 0x314 <DIO_enuReadPin+0x10>
+ 30a:	82 30       	cpi	r24, 0x02	; 2
+ 30c:	49 f1       	breq	.+82     	; 0x360 <DIO_enuReadPin+0x5c>
+ 30e:	83 30       	cpi	r24, 0x03	; 3
+ 310:	d1 f1       	breq	.+116    	; 0x386 <DIO_enuReadPin+0x82>
+ 312:	4b c0       	rjmp	.+150    	; 0x3aa <DIO_enuReadPin+0xa6>
+    {
+        case GPIOA:
+            enuPinReturnedValue = GET_BIT(PINA,enuPinNum);
+ 314:	29 b3       	in	r18, 0x19	; 25
+ 316:	81 e0       	ldi	r24, 0x01	; 1
+ 318:	90 e0       	ldi	r25, 0x00	; 0
+ 31a:	06 2e       	mov	r0, r22
+ 31c:	02 c0       	rjmp	.+4      	; 0x322 <DIO_enuReadPin+0x1e>
+ 31e:	88 0f       	add	r24, r24
+ 320:	99 1f       	adc	r25, r25
+ 322:	0a 94       	dec	r0
+ 324:	e2 f7       	brpl	.-8      	; 0x31e <DIO_enuReadPin+0x1a>
+ 326:	30 e0       	ldi	r19, 0x00	; 0
+ 328:	82 23       	and	r24, r18
+ 32a:	93 23       	and	r25, r19
+ 32c:	02 c0       	rjmp	.+4      	; 0x332 <DIO_enuReadPin+0x2e>
+ 32e:	95 95       	asr	r25
+ 330:	87 95       	ror	r24
+ 332:	6a 95       	dec	r22
+ 334:	e2 f7       	brpl	.-8      	; 0x32e <DIO_enuReadPin+0x2a>
+ 336:	98 2f       	mov	r25, r24
+            break;
+ 338:	38 c0       	rjmp	.+112    	; 0x3aa <DIO_enuReadPin+0xa6>
+        case GPIOB:
+            enuPinReturnedValue = GET_BIT(PINB,enuPinNum);
+ 33a:	26 b3       	in	r18, 0x16	; 22
+ 33c:	81 e0       	ldi	r24, 0x01	; 1
+ 33e:	90 e0       	ldi	r25, 0x00	; 0
+ 340:	06 2e       	mov	r0, r22
+ 342:	02 c0       	rjmp	.+4      	; 0x348 <DIO_enuReadPin+0x44>
+ 344:	88 0f       	add	r24, r24
+ 346:	99 1f       	adc	r25, r25
+ 348:	0a 94       	dec	r0
+ 34a:	e2 f7       	brpl	.-8      	; 0x344 <DIO_enuReadPin+0x40>
+ 34c:	30 e0       	ldi	r19, 0x00	; 0
+ 34e:	82 23       	and	r24, r18
+ 350:	93 23       	and	r25, r19
+ 352:	02 c0       	rjmp	.+4      	; 0x358 <DIO_enuReadPin+0x54>
+ 354:	95 95       	asr	r25
+ 356:	87 95       	ror	r24
+ 358:	6a 95       	dec	r22
+ 35a:	e2 f7       	brpl	.-8      	; 0x354 <DIO_enuReadPin+0x50>
+ 35c:	98 2f       	mov	r25, r24
+            break;
+ 35e:	25 c0       	rjmp	.+74     	; 0x3aa <DIO_enuReadPin+0xa6>
+        case GPIOC:
+            enuPinReturnedValue = GET_BIT(PINC,enuPinNum);
+ 360:	23 b3       	in	r18, 0x13	; 19
+ 362:	81 e0       	ldi	r24, 0x01	; 1
+ 364:	90 e0       	ldi	r25, 0x00	; 0
+ 366:	06 2e       	mov	r0, r22
+ 368:	02 c0       	rjmp	.+4      	; 0x36e <DIO_enuReadPin+0x6a>
+ 36a:	88 0f       	add	r24, r24
+ 36c:	99 1f       	adc	r25, r25
+ 36e:	0a 94       	dec	r0
+ 370:	e2 f7       	brpl	.-8      	; 0x36a <DIO_enuReadPin+0x66>
+ 372:	30 e0       	ldi	r19, 0x00	; 0
+ 374:	82 23       	and	r24, r18
+ 376:	93 23       	and	r25, r19
+ 378:	02 c0       	rjmp	.+4      	; 0x37e <DIO_enuReadPin+0x7a>
+ 37a:	95 95       	asr	r25
+ 37c:	87 95       	ror	r24
+ 37e:	6a 95       	dec	r22
+ 380:	e2 f7       	brpl	.-8      	; 0x37a <DIO_enuReadPin+0x76>
+ 382:	98 2f       	mov	r25, r24
+            break;
+ 384:	12 c0       	rjmp	.+36     	; 0x3aa <DIO_enuReadPin+0xa6>
+        case GPIOD:
+            enuPinReturnedValue = GET_BIT(PIND,enuPinNum);
+ 386:	20 b3       	in	r18, 0x10	; 16
+ 388:	81 e0       	ldi	r24, 0x01	; 1
+ 38a:	90 e0       	ldi	r25, 0x00	; 0
+ 38c:	06 2e       	mov	r0, r22
+ 38e:	02 c0       	rjmp	.+4      	; 0x394 <DIO_enuReadPin+0x90>
+ 390:	88 0f       	add	r24, r24
+ 392:	99 1f       	adc	r25, r25
+ 394:	0a 94       	dec	r0
+ 396:	e2 f7       	brpl	.-8      	; 0x390 <DIO_enuReadPin+0x8c>
+ 398:	30 e0       	ldi	r19, 0x00	; 0
+ 39a:	82 23       	and	r24, r18
+ 39c:	93 23       	and	r25, r19
+ 39e:	02 c0       	rjmp	.+4      	; 0x3a4 <DIO_enuReadPin+0xa0>
+ 3a0:	95 95       	asr	r25
+ 3a2:	87 95       	ror	r24
+ 3a4:	6a 95       	dec	r22
+ 3a6:	e2 f7       	brpl	.-8      	; 0x3a0 <DIO_enuReadPin+0x9c>
+ 3a8:	98 2f       	mov	r25, r24
+            break;
+        default:
+            break;
+    }
+    return enuPinReturnedValue;
+}
+ 3aa:	89 2f       	mov	r24, r25
+ 3ac:	08 95       	ret
+
+000003ae <LED_vidInit>:
+#include "LED_private.h"
+
+
+void LED_vidInit(_enuGPIOx enuPortNum, _enuPINx enuPinNum)
+{
+    DIO_vidSetPinMode(enuPortNum, enuPinNum, OUTPUT);   
+ 3ae:	41 e0       	ldi	r20, 0x01	; 1
+ 3b0:	0e 94 a8 00 	call	0x150	; 0x150 <DIO_vidSetPinMode>
+ 3b4:	08 95       	ret
+
+000003b6 <LED_vidTurnOn>:
+}
+void LED_vidTurnOn(_enuGPIOx enuPortNum, _enuPINx enuPinNum)
+{
+    DIO_vidWritePin(enuPortNum, enuPinNum, HIGH);
+ 3b6:	41 e0       	ldi	r20, 0x01	; 1
+ 3b8:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+ 3bc:	08 95       	ret
+
+000003be <LED_vidTurnOff>:
+}
+void LED_vidTurnOff(_enuGPIOx enuPortNum, _enuPINx enuPinNum)
+{
+    DIO_vidWritePin(enuPortNum, enuPinNum, LOW);
+ 3be:	40 e0       	ldi	r20, 0x00	; 0
+ 3c0:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+ 3c4:	08 95       	ret
+
+000003c6 <Remoted_Rooms>:
+/************************************************************************/
+void Remoted_Rooms()
+{
+	while(1)										// while loop to still control rooms
+	{
+		request = USART_u8RecieveByte();			// receive data from user
+ 3c6:	0e 94 6e 03 	call	0x6dc	; 0x6dc <USART_u8RecieveByte>
+ 3ca:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+		USART_vidEnableRXInterrupt();				// enable RX interrupt
+ 3ce:	0e 94 74 03 	call	0x6e8	; 0x6e8 <USART_vidEnableRXInterrupt>
+		switch(request)								// switch for data input
+ 3d2:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 3d6:	8e 2f       	mov	r24, r30
+ 3d8:	90 e0       	ldi	r25, 0x00	; 0
+ 3da:	fc 01       	movw	r30, r24
+ 3dc:	e2 54       	subi	r30, 0x42	; 66
+ 3de:	f1 09       	sbc	r31, r1
+ 3e0:	e9 33       	cpi	r30, 0x39	; 57
+ 3e2:	f1 05       	cpc	r31, r1
+ 3e4:	80 f7       	brcc	.-32     	; 0x3c6 <Remoted_Rooms>
+ 3e6:	e6 5d       	subi	r30, 0xD6	; 214
+ 3e8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 3ea:	0c 94 98 03 	jmp	0x730	; 0x730 <__tablejump2__>
+		{
+			case 'Z' :								// if data equal Z
+			LED_vidTurnOn(GPIOC,PIN0);				// turn on led
+ 3ee:	60 e0       	ldi	r22, 0x00	; 0
+ 3f0:	82 e0       	ldi	r24, 0x02	; 2
+ 3f2:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+			break;									// break switch
+ 3f6:	e7 cf       	rjmp	.-50     	; 0x3c6 <Remoted_Rooms>
+			case 'z' :								// if data equal z
+			LED_vidTurnOff(GPIOC,PIN0);				// turn off led
+ 3f8:	60 e0       	ldi	r22, 0x00	; 0
+ 3fa:	82 e0       	ldi	r24, 0x02	; 2
+ 3fc:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+			break;									// break switch
+ 400:	e2 cf       	rjmp	.-60     	; 0x3c6 <Remoted_Rooms>
+			case 'B' :								// if data equal B
+			LED_vidTurnOn(GPIOC,PIN1);				// turn on led
+ 402:	61 e0       	ldi	r22, 0x01	; 1
+ 404:	82 e0       	ldi	r24, 0x02	; 2
+ 406:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+			break;									// break switch
+ 40a:	dd cf       	rjmp	.-70     	; 0x3c6 <Remoted_Rooms>
+			case 'b' :								// if data equal b
+			LED_vidTurnOff(GPIOC,PIN1);				// turn off led
+ 40c:	61 e0       	ldi	r22, 0x01	; 1
+ 40e:	82 e0       	ldi	r24, 0x02	; 2
+ 410:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+			break;									// break switch
+ 414:	d8 cf       	rjmp	.-80     	; 0x3c6 <Remoted_Rooms>
+			case 'F' :								// if data equal F
+			LED_vidTurnOn(GPIOC,PIN2);				// turn on led
+ 416:	62 e0       	ldi	r22, 0x02	; 2
+ 418:	82 e0       	ldi	r24, 0x02	; 2
+ 41a:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+			break;									// break switch
+ 41e:	d3 cf       	rjmp	.-90     	; 0x3c6 <Remoted_Rooms>
+			case 'f' :								// if data equal f
+			LED_vidTurnOff(GPIOC,PIN2);				// turn off led
+ 420:	62 e0       	ldi	r22, 0x02	; 2
+ 422:	82 e0       	ldi	r24, 0x02	; 2
+ 424:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+			break;									// break switch
+ 428:	ce cf       	rjmp	.-100    	; 0x3c6 <Remoted_Rooms>
+			case 'D' :								// if data equal D
+			LED_vidTurnOn(GPIOC,PIN3);				// turn on led
+ 42a:	63 e0       	ldi	r22, 0x03	; 3
+ 42c:	82 e0       	ldi	r24, 0x02	; 2
+ 42e:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+			break;									// break switch
+ 432:	c9 cf       	rjmp	.-110    	; 0x3c6 <Remoted_Rooms>
+			case 'd' :								// if data equal d
+			LED_vidTurnOff(GPIOC,PIN3);				// turn off led
+ 434:	63 e0       	ldi	r22, 0x03	; 3
+ 436:	82 e0       	ldi	r24, 0x02	; 2
+ 438:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+			break;									// break switch
+ 43c:	c4 cf       	rjmp	.-120    	; 0x3c6 <Remoted_Rooms>
+			case 'E' :								// if data equal E
+			LED_vidTurnOn(GPIOC,PIN4);				// turn on led
+ 43e:	64 e0       	ldi	r22, 0x04	; 4
+ 440:	82 e0       	ldi	r24, 0x02	; 2
+ 442:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+			break;									// break switch
+ 446:	bf cf       	rjmp	.-130    	; 0x3c6 <Remoted_Rooms>
+			case 'e' :								// if data equal e
+			LED_vidTurnOff(GPIOC,PIN4);				// turn off led
+ 448:	64 e0       	ldi	r22, 0x04	; 4
+ 44a:	82 e0       	ldi	r24, 0x02	; 2
+ 44c:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+			break;									// break switch
+ 450:	ba cf       	rjmp	.-140    	; 0x3c6 <Remoted_Rooms>
+			case 'G' :								// if data equal G
+			DIO_vidWritePin(GPIOC, PIN5, HIGH); 	// output high at pin
+ 452:	41 e0       	ldi	r20, 0x01	; 1
+ 454:	65 e0       	ldi	r22, 0x05	; 5
+ 456:	82 e0       	ldi	r24, 0x02	; 2
+ 458:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+			//			LED_vidTurnOn(GPIOC,5);					// turn on led
+			break;									// break switch
+ 45c:	b4 cf       	rjmp	.-152    	; 0x3c6 <Remoted_Rooms>
+			case 'g' :								// if data equal g
+			DIO_vidWritePin(GPIOC, PIN5, LOW);		// output high at pin
+ 45e:	40 e0       	ldi	r20, 0x00	; 0
+ 460:	65 e0       	ldi	r22, 0x05	; 5
+ 462:	82 e0       	ldi	r24, 0x02	; 2
+ 464:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+			//			LED_vidTurnOff(GPIOC,5);				// turn off led
+			break;									// break switch
+ 468:	ae cf       	rjmp	.-164    	; 0x3c6 <Remoted_Rooms>
+
+0000046a <main>:
+/************************************************************************/
+/*                         Slave main function							*/
+/************************************************************************/
+int main(void)
+{		
+	USART_vidInit(9600);							// initialize UART protocol with baud rate 9600
+ 46a:	60 e8       	ldi	r22, 0x80	; 128
+ 46c:	75 e2       	ldi	r23, 0x25	; 37
+ 46e:	80 e0       	ldi	r24, 0x00	; 0
+ 470:	90 e0       	ldi	r25, 0x00	; 0
+ 472:	0e 94 30 03 	call	0x660	; 0x660 <USART_vidInit>
+	LED_vidInit(GPIOC,PIN0);						// initialize led in port C & pin0
+ 476:	60 e0       	ldi	r22, 0x00	; 0
+ 478:	82 e0       	ldi	r24, 0x02	; 2
+ 47a:	0e 94 d7 01 	call	0x3ae	; 0x3ae <LED_vidInit>
+	LED_vidInit(GPIOC,PIN1);						// initialize led in port C & pin1
+ 47e:	61 e0       	ldi	r22, 0x01	; 1
+ 480:	82 e0       	ldi	r24, 0x02	; 2
+ 482:	0e 94 d7 01 	call	0x3ae	; 0x3ae <LED_vidInit>
+	LED_vidInit(GPIOC,PIN2);						// initialize led in port C & pin2
+ 486:	62 e0       	ldi	r22, 0x02	; 2
+ 488:	82 e0       	ldi	r24, 0x02	; 2
+ 48a:	0e 94 d7 01 	call	0x3ae	; 0x3ae <LED_vidInit>
+	LED_vidInit(GPIOC,PIN3);						// initialize led in port C & pin3
+ 48e:	63 e0       	ldi	r22, 0x03	; 3
+ 490:	82 e0       	ldi	r24, 0x02	; 2
+ 492:	0e 94 d7 01 	call	0x3ae	; 0x3ae <LED_vidInit>
+	LED_vidInit(GPIOC,PIN4);						// initialize led in port C & pin4
+ 496:	64 e0       	ldi	r22, 0x04	; 4
+ 498:	82 e0       	ldi	r24, 0x02	; 2
+ 49a:	0e 94 d7 01 	call	0x3ae	; 0x3ae <LED_vidInit>
+	DIO_vidSetPinMode(GPIOC, PIN5, OUTPUT);			// initialize pin5 in port C as output
+ 49e:	41 e0       	ldi	r20, 0x01	; 1
+ 4a0:	65 e0       	ldi	r22, 0x05	; 5
+ 4a2:	82 e0       	ldi	r24, 0x02	; 2
+ 4a4:	0e 94 a8 00 	call	0x150	; 0x150 <DIO_vidSetPinMode>
+	u8 response = 0;								// declare variable to store receive data
+	request = USART_u8RecieveByte();				// receive data
+ 4a8:	0e 94 6e 03 	call	0x6dc	; 0x6dc <USART_u8RecieveByte>
+ 4ac:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+	USART_vidEnableRXInterrupt();					// enable RX interrupt (finish reserving)
+ 4b0:	0e 94 74 03 	call	0x6e8	; 0x6e8 <USART_vidEnableRXInterrupt>
+	LED_vidInit(GPIOC,PIN1);						// initialize led in port C & pin1
+	LED_vidInit(GPIOC,PIN2);						// initialize led in port C & pin2
+	LED_vidInit(GPIOC,PIN3);						// initialize led in port C & pin3
+	LED_vidInit(GPIOC,PIN4);						// initialize led in port C & pin4
+	DIO_vidSetPinMode(GPIOC, PIN5, OUTPUT);			// initialize pin5 in port C as output
+	u8 response = 0;								// declare variable to store receive data
+ 4b4:	c0 e0       	ldi	r28, 0x00	; 0
+	request = USART_u8RecieveByte();				// receive data
+	USART_vidEnableRXInterrupt();					// enable RX interrupt (finish reserving)
+	while(1)										// while loop for keeping system on while using it
+	{
+		if (request == '1')
+ 4b6:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 4ba:	81 33       	cpi	r24, 0x31	; 49
+ 4bc:	11 f4       	brne	.+4      	; 0x4c2 <main+0x58>
+		{
+			Remoted_Rooms();						// function to control rooms remotely
+ 4be:	0e 94 e3 01 	call	0x3c6	; 0x3c6 <Remoted_Rooms>
+		}
+		else
+		{
+			request = USART_u8RecieveByte();		// receive data
+ 4c2:	0e 94 6e 03 	call	0x6dc	; 0x6dc <USART_u8RecieveByte>
+ 4c6:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__DATA_REGION_ORIGIN__>
+			USART_vidEnableRXInterrupt();			// enable RX interrupt (finish reserving)
+ 4ca:	0e 94 74 03 	call	0x6e8	; 0x6e8 <USART_vidEnableRXInterrupt>
+			switch (request)						// switch for receive data to know which action should take
+ 4ce:	e0 91 60 00 	lds	r30, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 4d2:	8e 2f       	mov	r24, r30
+ 4d4:	90 e0       	ldi	r25, 0x00	; 0
+ 4d6:	fc 01       	movw	r30, r24
+ 4d8:	71 97       	sbiw	r30, 0x11	; 17
+ 4da:	e6 32       	cpi	r30, 0x26	; 38
+ 4dc:	f1 05       	cpc	r31, r1
+ 4de:	58 f7       	brcc	.-42     	; 0x4b6 <main+0x4c>
+ 4e0:	ed 59       	subi	r30, 0x9D	; 157
+ 4e2:	ff 4f       	sbci	r31, 0xFF	; 255
+ 4e4:	0c 94 98 03 	jmp	0x730	; 0x730 <__tablejump2__>
+			{
+				case ROOM1_STATUS:					// if data receive is room1
+				if (DIO_enuReadPin(GPIOC,PIN0)==0)	// check if pin is low (device off)
+ 4e8:	60 e0       	ldi	r22, 0x00	; 0
+ 4ea:	82 e0       	ldi	r24, 0x02	; 2
+ 4ec:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 4f0:	88 23       	and	r24, r24
+ 4f2:	41 f0       	breq	.+16     	; 0x504 <main+0x9a>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN0)==1)// check if pin is High (device on)
+ 4f4:	60 e0       	ldi	r22, 0x00	; 0
+ 4f6:	82 e0       	ldi	r24, 0x02	; 2
+ 4f8:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 4fc:	81 30       	cpi	r24, 0x01	; 1
+ 4fe:	19 f4       	brne	.+6      	; 0x506 <main+0x9c>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 500:	c1 e0       	ldi	r28, 0x01	; 1
+ 502:	01 c0       	rjmp	.+2      	; 0x506 <main+0x9c>
+			switch (request)						// switch for receive data to know which action should take
+			{
+				case ROOM1_STATUS:					// if data receive is room1
+				if (DIO_enuReadPin(GPIOC,PIN0)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 504:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not	
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 506:	8c 2f       	mov	r24, r28
+ 508:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 50c:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 510:	d2 cf       	rjmp	.-92     	; 0x4b6 <main+0x4c>
+				case ROOM2_STATUS:					// if data receive is room2
+				if (DIO_enuReadPin(GPIOC,PIN1)==0)	// check if pin is low (device off)
+ 512:	61 e0       	ldi	r22, 0x01	; 1
+ 514:	82 e0       	ldi	r24, 0x02	; 2
+ 516:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 51a:	88 23       	and	r24, r24
+ 51c:	41 f0       	breq	.+16     	; 0x52e <main+0xc4>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN1)==1)// check if pin is High (device on)
+ 51e:	61 e0       	ldi	r22, 0x01	; 1
+ 520:	82 e0       	ldi	r24, 0x02	; 2
+ 522:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 526:	81 30       	cpi	r24, 0x01	; 1
+ 528:	19 f4       	brne	.+6      	; 0x530 <main+0xc6>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 52a:	c1 e0       	ldi	r28, 0x01	; 1
+ 52c:	01 c0       	rjmp	.+2      	; 0x530 <main+0xc6>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+				break;								// break switch
+				case ROOM2_STATUS:					// if data receive is room2
+				if (DIO_enuReadPin(GPIOC,PIN1)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 52e:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 530:	8c 2f       	mov	r24, r28
+ 532:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 536:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 53a:	bd cf       	rjmp	.-134    	; 0x4b6 <main+0x4c>
+				case ROOM3_STATUS:					// if data receive is room3
+				if (DIO_enuReadPin(GPIOC,PIN2)==0)	// check if pin is low (device off)
+ 53c:	62 e0       	ldi	r22, 0x02	; 2
+ 53e:	82 e0       	ldi	r24, 0x02	; 2
+ 540:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 544:	88 23       	and	r24, r24
+ 546:	41 f0       	breq	.+16     	; 0x558 <main+0xee>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN2)==1)// check if pin is High (device on)
+ 548:	62 e0       	ldi	r22, 0x02	; 2
+ 54a:	82 e0       	ldi	r24, 0x02	; 2
+ 54c:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 550:	81 30       	cpi	r24, 0x01	; 1
+ 552:	19 f4       	brne	.+6      	; 0x55a <main+0xf0>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 554:	c1 e0       	ldi	r28, 0x01	; 1
+ 556:	01 c0       	rjmp	.+2      	; 0x55a <main+0xf0>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+				break;								// break switch
+				case ROOM3_STATUS:					// if data receive is room3
+				if (DIO_enuReadPin(GPIOC,PIN2)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 558:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 55a:	8c 2f       	mov	r24, r28
+ 55c:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 560:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 564:	a8 cf       	rjmp	.-176    	; 0x4b6 <main+0x4c>
+						
+				case ROOM4_STATUS:					// if data receive is room4
+				if (DIO_enuReadPin(GPIOC,PIN3)==0)	// check if pin is low (device off)
+ 566:	63 e0       	ldi	r22, 0x03	; 3
+ 568:	82 e0       	ldi	r24, 0x02	; 2
+ 56a:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 56e:	88 23       	and	r24, r24
+ 570:	41 f0       	breq	.+16     	; 0x582 <main+0x118>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN3)==1)// check if pin is High (device on)
+ 572:	63 e0       	ldi	r22, 0x03	; 3
+ 574:	82 e0       	ldi	r24, 0x02	; 2
+ 576:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 57a:	81 30       	cpi	r24, 0x01	; 1
+ 57c:	19 f4       	brne	.+6      	; 0x584 <main+0x11a>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 57e:	c1 e0       	ldi	r28, 0x01	; 1
+ 580:	01 c0       	rjmp	.+2      	; 0x584 <main+0x11a>
+				break;								// break switch
+						
+				case ROOM4_STATUS:					// if data receive is room4
+				if (DIO_enuReadPin(GPIOC,PIN3)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 582:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 584:	8c 2f       	mov	r24, r28
+ 586:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 58a:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 58e:	93 cf       	rjmp	.-218    	; 0x4b6 <main+0x4c>
+				case ROOM5_STATUS:					// if data receive is room5
+				if (DIO_enuReadPin(GPIOC,PIN4)==0)	// check if pin is low (device off)
+ 590:	64 e0       	ldi	r22, 0x04	; 4
+ 592:	82 e0       	ldi	r24, 0x02	; 2
+ 594:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 598:	88 23       	and	r24, r24
+ 59a:	41 f0       	breq	.+16     	; 0x5ac <main+0x142>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN4)==1)// check if pin is High (device on)
+ 59c:	64 e0       	ldi	r22, 0x04	; 4
+ 59e:	82 e0       	ldi	r24, 0x02	; 2
+ 5a0:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 5a4:	81 30       	cpi	r24, 0x01	; 1
+ 5a6:	19 f4       	brne	.+6      	; 0x5ae <main+0x144>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 5a8:	c1 e0       	ldi	r28, 0x01	; 1
+ 5aa:	01 c0       	rjmp	.+2      	; 0x5ae <main+0x144>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+				break;								// break switch
+				case ROOM5_STATUS:					// if data receive is room5
+				if (DIO_enuReadPin(GPIOC,PIN4)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 5ac:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 5ae:	8c 2f       	mov	r24, r28
+ 5b0:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 5b4:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 5b8:	7e cf       	rjmp	.-260    	; 0x4b6 <main+0x4c>
+				case ROOM6_STATUS:					// if data receive is room6
+				if (DIO_enuReadPin(GPIOC,PIN5)==0)	// check if pin is low (device off)
+ 5ba:	65 e0       	ldi	r22, 0x05	; 5
+ 5bc:	82 e0       	ldi	r24, 0x02	; 2
+ 5be:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 5c2:	88 23       	and	r24, r24
+ 5c4:	41 f0       	breq	.+16     	; 0x5d6 <main+0x16c>
+				{
+					response = OFF_STATUS;			// set response variable to off status
+				}
+				else if (DIO_enuReadPin(GPIOC,PIN5)==1)// check if pin is High (device on)
+ 5c6:	65 e0       	ldi	r22, 0x05	; 5
+ 5c8:	82 e0       	ldi	r24, 0x02	; 2
+ 5ca:	0e 94 82 01 	call	0x304	; 0x304 <DIO_enuReadPin>
+ 5ce:	81 30       	cpi	r24, 0x01	; 1
+ 5d0:	19 f4       	brne	.+6      	; 0x5d8 <main+0x16e>
+				{
+					response = ON_STATUS;			// set response variable to on status
+ 5d2:	c1 e0       	ldi	r28, 0x01	; 1
+ 5d4:	01 c0       	rjmp	.+2      	; 0x5d8 <main+0x16e>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+				break;								// break switch
+				case ROOM6_STATUS:					// if data receive is room6
+				if (DIO_enuReadPin(GPIOC,PIN5)==0)	// check if pin is low (device off)
+				{
+					response = OFF_STATUS;			// set response variable to off status
+ 5d6:	c0 e0       	ldi	r28, 0x00	; 0
+					response = ON_STATUS;			// set response variable to on status
+				}
+				else								// if not
+				{
+				}
+				USART_vidSendByte(response);		// send updated data
+ 5d8:	8c 2f       	mov	r24, r28
+ 5da:	0e 94 6a 03 	call	0x6d4	; 0x6d4 <USART_vidSendByte>
+				USART_vidEnableTXInterrupt();		// enable TX interrupt
+ 5de:	0e 94 72 03 	call	0x6e4	; 0x6e4 <USART_vidEnableTXInterrupt>
+				break;								// break switch
+ 5e2:	69 cf       	rjmp	.-302    	; 0x4b6 <main+0x4c>
+						
+				case ROOM1_TURN_ON:					// case room1 turn on
+				LED_vidTurnOn(GPIOC,PIN0);			// turn on led
+ 5e4:	60 e0       	ldi	r22, 0x00	; 0
+ 5e6:	82 e0       	ldi	r24, 0x02	; 2
+ 5e8:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+				break;								// break switch
+ 5ec:	64 cf       	rjmp	.-312    	; 0x4b6 <main+0x4c>
+				case ROOM2_TURN_ON:					// case room2 turn on
+				LED_vidTurnOn(GPIOC,PIN1);			// turn on led
+ 5ee:	61 e0       	ldi	r22, 0x01	; 1
+ 5f0:	82 e0       	ldi	r24, 0x02	; 2
+ 5f2:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+				break;								// break switch
+ 5f6:	5f cf       	rjmp	.-322    	; 0x4b6 <main+0x4c>
+				case ROOM3_TURN_ON:					// case room3 turn on
+				LED_vidTurnOn(GPIOC,PIN2);			// turn on led
+ 5f8:	62 e0       	ldi	r22, 0x02	; 2
+ 5fa:	82 e0       	ldi	r24, 0x02	; 2
+ 5fc:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+				break;								// break switch
+ 600:	5a cf       	rjmp	.-332    	; 0x4b6 <main+0x4c>
+				case ROOM4_TURN_ON:					// case room4 turn on
+				LED_vidTurnOn(GPIOC,PIN3);			// turn on led
+ 602:	63 e0       	ldi	r22, 0x03	; 3
+ 604:	82 e0       	ldi	r24, 0x02	; 2
+ 606:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+				break;								// break switch
+ 60a:	55 cf       	rjmp	.-342    	; 0x4b6 <main+0x4c>
+				case ROOM5_TURN_ON:					// case room5 turn on
+				LED_vidTurnOn(GPIOC,PIN4);			// turn on led
+ 60c:	64 e0       	ldi	r22, 0x04	; 4
+ 60e:	82 e0       	ldi	r24, 0x02	; 2
+ 610:	0e 94 db 01 	call	0x3b6	; 0x3b6 <LED_vidTurnOn>
+				break;								// break switch
+ 614:	50 cf       	rjmp	.-352    	; 0x4b6 <main+0x4c>
+				case ROOM6_TURN_ON:					// case room6 turn on
+				DIO_vidWritePin(GPIOC, PIN5, HIGH);// output high at pin
+ 616:	41 e0       	ldi	r20, 0x01	; 1
+ 618:	65 e0       	ldi	r22, 0x05	; 5
+ 61a:	82 e0       	ldi	r24, 0x02	; 2
+ 61c:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+				break;								// break switch
+ 620:	4a cf       	rjmp	.-364    	; 0x4b6 <main+0x4c>
+						
+				case ROOM1_TURN_OFF:				// case room2 turn off
+				LED_vidTurnOff(GPIOC,PIN0); 		// turn off led
+ 622:	60 e0       	ldi	r22, 0x00	; 0
+ 624:	82 e0       	ldi	r24, 0x02	; 2
+ 626:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+				break;								// break switch
+ 62a:	45 cf       	rjmp	.-374    	; 0x4b6 <main+0x4c>
+				case ROOM2_TURN_OFF:				// case room1 turn off
+				LED_vidTurnOff(GPIOC,PIN1); 		// turn off led
+ 62c:	61 e0       	ldi	r22, 0x01	; 1
+ 62e:	82 e0       	ldi	r24, 0x02	; 2
+ 630:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+				break;								// break switch
+ 634:	40 cf       	rjmp	.-384    	; 0x4b6 <main+0x4c>
+				case ROOM3_TURN_OFF:				// case room3 turn off
+				LED_vidTurnOff(GPIOC,PIN2);	    	// turn off led
+ 636:	62 e0       	ldi	r22, 0x02	; 2
+ 638:	82 e0       	ldi	r24, 0x02	; 2
+ 63a:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+				break;								// break switch
+ 63e:	3b cf       	rjmp	.-394    	; 0x4b6 <main+0x4c>
+				case ROOM4_TURN_OFF:				// case room4 turn off
+				LED_vidTurnOff(GPIOC,PIN3); 		// turn off led
+ 640:	63 e0       	ldi	r22, 0x03	; 3
+ 642:	82 e0       	ldi	r24, 0x02	; 2
+ 644:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+				break;								// break switch
+ 648:	36 cf       	rjmp	.-404    	; 0x4b6 <main+0x4c>
+				case ROOM5_TURN_OFF:				// case room5 turn off
+				LED_vidTurnOff(GPIOC,PIN4);	    	// turn off led
+ 64a:	64 e0       	ldi	r22, 0x04	; 4
+ 64c:	82 e0       	ldi	r24, 0x02	; 2
+ 64e:	0e 94 df 01 	call	0x3be	; 0x3be <LED_vidTurnOff>
+				break;								// break switch
+ 652:	31 cf       	rjmp	.-414    	; 0x4b6 <main+0x4c>
+				case ROOM6_TURN_OFF:				// case room6 turn off
+				DIO_vidWritePin(GPIOC, PIN5, LOW);  // output low at pin
+ 654:	40 e0       	ldi	r20, 0x00	; 0
+ 656:	65 e0       	ldi	r22, 0x05	; 5
+ 658:	82 e0       	ldi	r24, 0x02	; 2
+ 65a:	0e 94 15 01 	call	0x22a	; 0x22a <DIO_vidWritePin>
+				break;								// break switch
+ 65e:	2b cf       	rjmp	.-426    	; 0x4b6 <main+0x4c>
+
+00000660 <USART_vidInit>:
+
+void USART_vidInit(u32 copy_u8BaudRate)
+{
+    u16 Local_UBRR;
+    /* Adjust Mode */
+    CLR_BIT(USCRC,URSEL);
+ 660:	20 b5       	in	r18, 0x20	; 32
+ 662:	2f 77       	andi	r18, 0x7F	; 127
+ 664:	20 bd       	out	0x20, r18	; 32
+    #if   USART_MODE == 0
+        // SET_BIT(USCRC,UMSEL);
+        CLR_BIT(USCRC,UMSEL);
+ 666:	20 b5       	in	r18, 0x20	; 32
+ 668:	2f 7b       	andi	r18, 0xBF	; 191
+ 66a:	20 bd       	out	0x20, r18	; 32
+        Local_UBRR = (8000000/(16*copy_u8BaudRate))-1;
+ 66c:	dc 01       	movw	r26, r24
+ 66e:	cb 01       	movw	r24, r22
+ 670:	88 0f       	add	r24, r24
+ 672:	99 1f       	adc	r25, r25
+ 674:	aa 1f       	adc	r26, r26
+ 676:	bb 1f       	adc	r27, r27
+ 678:	88 0f       	add	r24, r24
+ 67a:	99 1f       	adc	r25, r25
+ 67c:	aa 1f       	adc	r26, r26
+ 67e:	bb 1f       	adc	r27, r27
+ 680:	9c 01       	movw	r18, r24
+ 682:	ad 01       	movw	r20, r26
+ 684:	22 0f       	add	r18, r18
+ 686:	33 1f       	adc	r19, r19
+ 688:	44 1f       	adc	r20, r20
+ 68a:	55 1f       	adc	r21, r21
+ 68c:	22 0f       	add	r18, r18
+ 68e:	33 1f       	adc	r19, r19
+ 690:	44 1f       	adc	r20, r20
+ 692:	55 1f       	adc	r21, r21
+ 694:	60 e0       	ldi	r22, 0x00	; 0
+ 696:	72 e1       	ldi	r23, 0x12	; 18
+ 698:	8a e7       	ldi	r24, 0x7A	; 122
+ 69a:	90 e0       	ldi	r25, 0x00	; 0
+ 69c:	0e 94 76 03 	call	0x6ec	; 0x6ec <__udivmodsi4>
+ 6a0:	21 50       	subi	r18, 0x01	; 1
+ 6a2:	31 09       	sbc	r19, r1
+    #elif USART_WORDSIZE == 2
+        CLR_BIT(USCRC,UCSZ0);
+        SET_BIT(USCRC,UCSZ1);
+        CLR_BIT(USCRB,UCSZ2);
+    #elif USART_WORDSIZE == 3
+        SET_BIT(USCRC,UCSZ0);
+ 6a4:	80 b5       	in	r24, 0x20	; 32
+ 6a6:	82 60       	ori	r24, 0x02	; 2
+ 6a8:	80 bd       	out	0x20, r24	; 32
+        SET_BIT(USCRC,UCSZ1);
+ 6aa:	80 b5       	in	r24, 0x20	; 32
+ 6ac:	84 60       	ori	r24, 0x04	; 4
+ 6ae:	80 bd       	out	0x20, r24	; 32
+        CLR_BIT(USCRB,UCSZ2);
+ 6b0:	52 98       	cbi	0x0a, 2	; 10
+        SET_BIT(USCRB,UCSZ2);
+    #endif
+
+    /* Adjust Parity */
+    #if   USART_PARITY == 0
+        CLR_BIT(USCRC,UPM0);
+ 6b2:	80 b5       	in	r24, 0x20	; 32
+ 6b4:	8f 7e       	andi	r24, 0xEF	; 239
+ 6b6:	80 bd       	out	0x20, r24	; 32
+        CLR_BIT(USCRC,UPM1);
+ 6b8:	80 b5       	in	r24, 0x20	; 32
+ 6ba:	8f 7d       	andi	r24, 0xDF	; 223
+ 6bc:	80 bd       	out	0x20, r24	; 32
+
+    /* Adjust Stop Bit */
+    #if USART_STOPBIT == 0
+        CLR_BIT(USCRC,USBS);
+    #else
+        SET_BIT(USCRC,USBS);
+ 6be:	80 b5       	in	r24, 0x20	; 32
+ 6c0:	88 60       	ori	r24, 0x08	; 8
+ 6c2:	80 bd       	out	0x20, r24	; 32
+    #endif
+
+    /* Enable TX and RX */
+    SET_BIT(USCRB,TXEN);
+ 6c4:	53 9a       	sbi	0x0a, 3	; 10
+    SET_BIT(USCRB,RXEN);
+ 6c6:	54 9a       	sbi	0x0a, 4	; 10
+
+    /* Adjust UBRR */
+    SET_BIT(USCRC,URSEL);
+ 6c8:	80 b5       	in	r24, 0x20	; 32
+ 6ca:	80 68       	ori	r24, 0x80	; 128
+ 6cc:	80 bd       	out	0x20, r24	; 32
+    UBRRH = (u8)(Local_UBRR >> 8);
+ 6ce:	30 bd       	out	0x20, r19	; 32
+    UBRRL = (u8)(Local_UBRR);
+ 6d0:	29 b9       	out	0x09, r18	; 9
+ 6d2:	08 95       	ret
+
+000006d4 <USART_vidSendByte>:
+}
+
+void USART_vidSendByte(u8 copy_u8DataSend)
+{
+    while(GET_BIT(USCRA,UDRE)==0);
+ 6d4:	5d 9b       	sbis	0x0b, 5	; 11
+ 6d6:	fe cf       	rjmp	.-4      	; 0x6d4 <USART_vidSendByte>
+    UDR = copy_u8DataSend;
+ 6d8:	8c b9       	out	0x0c, r24	; 12
+ 6da:	08 95       	ret
+
+000006dc <USART_u8RecieveByte>:
+}
+
+u8 USART_u8RecieveByte(void)
+{
+    while(GET_BIT(USCRA,RXC)==0);
+ 6dc:	5f 9b       	sbis	0x0b, 7	; 11
+ 6de:	fe cf       	rjmp	.-4      	; 0x6dc <USART_u8RecieveByte>
+    return UDR;   
+ 6e0:	8c b1       	in	r24, 0x0c	; 12
+}
+ 6e2:	08 95       	ret
+
+000006e4 <USART_vidEnableTXInterrupt>:
+
+void USART_vidEnableTXInterrupt(void)
+{
+    SET_BIT(USCRB,TXCIE);   
+ 6e4:	56 9a       	sbi	0x0a, 6	; 10
+ 6e6:	08 95       	ret
+
+000006e8 <USART_vidEnableRXInterrupt>:
+}
+
+void USART_vidEnableRXInterrupt(void)
+{
+    SET_BIT(USCRB,RXCIE);
+ 6e8:	57 9a       	sbi	0x0a, 7	; 10
+ 6ea:	08 95       	ret
+
+000006ec <__udivmodsi4>:
+ 6ec:	a1 e2       	ldi	r26, 0x21	; 33
+ 6ee:	1a 2e       	mov	r1, r26
+ 6f0:	aa 1b       	sub	r26, r26
+ 6f2:	bb 1b       	sub	r27, r27
+ 6f4:	fd 01       	movw	r30, r26
+ 6f6:	0d c0       	rjmp	.+26     	; 0x712 <__udivmodsi4_ep>
+
+000006f8 <__udivmodsi4_loop>:
+ 6f8:	aa 1f       	adc	r26, r26
+ 6fa:	bb 1f       	adc	r27, r27
+ 6fc:	ee 1f       	adc	r30, r30
+ 6fe:	ff 1f       	adc	r31, r31
+ 700:	a2 17       	cp	r26, r18
+ 702:	b3 07       	cpc	r27, r19
+ 704:	e4 07       	cpc	r30, r20
+ 706:	f5 07       	cpc	r31, r21
+ 708:	20 f0       	brcs	.+8      	; 0x712 <__udivmodsi4_ep>
+ 70a:	a2 1b       	sub	r26, r18
+ 70c:	b3 0b       	sbc	r27, r19
+ 70e:	e4 0b       	sbc	r30, r20
+ 710:	f5 0b       	sbc	r31, r21
+
+00000712 <__udivmodsi4_ep>:
+ 712:	66 1f       	adc	r22, r22
+ 714:	77 1f       	adc	r23, r23
+ 716:	88 1f       	adc	r24, r24
+ 718:	99 1f       	adc	r25, r25
+ 71a:	1a 94       	dec	r1
+ 71c:	69 f7       	brne	.-38     	; 0x6f8 <__udivmodsi4_loop>
+ 71e:	60 95       	com	r22
+ 720:	70 95       	com	r23
+ 722:	80 95       	com	r24
+ 724:	90 95       	com	r25
+ 726:	9b 01       	movw	r18, r22
+ 728:	ac 01       	movw	r20, r24
+ 72a:	bd 01       	movw	r22, r26
+ 72c:	cf 01       	movw	r24, r30
+ 72e:	08 95       	ret
+
+00000730 <__tablejump2__>:
+ 730:	ee 0f       	add	r30, r30
+ 732:	ff 1f       	adc	r31, r31
+ 734:	05 90       	lpm	r0, Z+
+ 736:	f4 91       	lpm	r31, Z
+ 738:	e0 2d       	mov	r30, r0
+ 73a:	09 94       	ijmp
+
+0000073c <_exit>:
+ 73c:	f8 94       	cli
+
+0000073e <__stop_program>:
+ 73e:	ff cf       	rjmp	.-2      	; 0x73e <__stop_program>
