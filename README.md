@@ -34,8 +34,8 @@ users can control the Room Lighting, Air condition, and the door opening.
 
 ## Requirements to Run the project
 
->Proteus must Setup to Run the project
->Microchip studio Must Setup to edit in the project
+1. Proteus must Setup to Run the project
+2. Microchip studio Must Setup to edit in the project
 
 ## How to Run the project
 
