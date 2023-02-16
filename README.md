@@ -39,7 +39,7 @@ users can control the Room Lighting, Air condition, and the door opening.
 
 ## How to Run the project
 
-Simply download this repository and open the oroject folder, then open Simulation folder and open the proteus file to start run the project. For editing in the project you should open master or slave folder and then open microchip file to start editing.
+Simply download this repository and open the Project folder, then open Simulation folder and open the proteus file to start run the project. For editing in the project you should open master or slave folder and then open microchip file to start editing.
 
 ## Project Interface
 
