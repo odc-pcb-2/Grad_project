@@ -14,7 +14,7 @@ void (*LOC_PtrFunCBINT1)(void);
 void (*LOC_PtrFunCBINT2)(void);
 
 
-void EXTI_vidInit(_SOURCE_OF_INTERUPT enuInterruptNum, _enuFIRING_SOURCE enuFiringSource)
+void EXTI_vidInit(_enuSOURCE_OF_INTERUPT enuInterruptNum, _enuFIRING_SOURCE enuFiringSource)
 {
     //1-Enable Global Interrupt
     SET_BIT(SREG, GI);
